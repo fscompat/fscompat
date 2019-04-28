@@ -19,6 +19,7 @@ addons:
   homebrew:
     packages:
       - meson
+    casks:
       - osxfuse
     update: true
 
