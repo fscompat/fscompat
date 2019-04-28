@@ -1,4 +1,4 @@
-/*
+/* SPDX-License-Identifier: CC0 OR ISC OR GPL-3.0-or-later
 fscompat for FUSE
 Written in 2019 by fscompat Developers
 

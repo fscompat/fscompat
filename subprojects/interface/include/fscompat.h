@@ -1,4 +1,4 @@
-/*
+/* SPDX-License-Identifier: CC0
 fscompat
 Written in 2019 by fscompat Developers
 

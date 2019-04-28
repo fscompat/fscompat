@@ -1,4 +1,4 @@
-/*
+/* SPDX-License-Identifier: CC0 OR ISC
 fscompat for macOS
 Written in 2019 by fscompat Developers
 
