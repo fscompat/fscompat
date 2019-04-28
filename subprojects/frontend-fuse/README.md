@@ -9,7 +9,7 @@ license, and the GPL version 3 or any later version.
 
 ### CC0
 
-fscompat for FUSE
+fscompat for FUSE  
 Written in 2019 by fscompat Developers
 
 To the extent possible under law, the author(s) have dedicated all

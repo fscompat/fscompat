@@ -9,7 +9,7 @@ license.
 
 ### CC0
 
-fscompat for FreeBSD
+fscompat for FreeBSD  
 Written in 2019 by fscompat Developers
 
 To the extent possible under law, the author(s) have dedicated all
