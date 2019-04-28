@@ -9,20 +9,7 @@ bash = find_program('bash')
 
 custom_target('fscompat.ko',
     output: 'fscompat.ko',
-    input: 'fscompat.c',
-    command: [
-        bash,
-        '-c',
-        'unset CC'
-            + '&& rm -rf "@PRIVATE_DIR@"/fscompat-linux'
-            + '&& mkdir -p "@PRIVATE_DIR@"'
-            + '&& cp -R "`dirname "@INPUT@"`" '
-                + '"@PRIVATE_DIR@"/fscompat-linux'
-            + '&& pushd "@PRIVATE_DIR@"/fscompat-linux'
-            + '&& make -C /lib/modules/`uname -r`/build '
-                + 'M="`pwd`"'
-            + '&& popd'
-            + '&& mv "@PRIVATE_DIR@"/fscompat-linux/fscompat.ko @OUTPUT@'
-    ],
+    input: files('fscompat.c'),
+    command: [ bash, files('build.sh'), '@PRIVATE_DIR@', '@OUTPUT@', '@INPUT@' ]
     build_by_default: true
 )
