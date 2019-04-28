@@ -30,6 +30,7 @@ script:
  - meson build
  - cd build
  - ninja
+ - ls -R subprojects
  - '[[ ! "$TRAVIS_OS_NAME" == "osx" ]] || [[ -e subprojects/frontend-darwin/fscompat.kext ]]'
  - '[[ ! "$TRAVIS_OS_NAME" == "linux" ]] || [[ -e subprojects/frontend-linux/fscompat.ko ]]'
  - test -e subprojects/frontend-fuse/fscompat-fuse-fat
