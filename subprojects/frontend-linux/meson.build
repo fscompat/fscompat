@@ -21,7 +21,7 @@ custom_target('fscompat.ko',
             + '&& cd @PRIVATE_DIR@'
             + '&& make -C /lib/modules/`uname -r`/build '
                 + 'M="$MODDIR"'
-            + '&& mv "`dirname "$MODDIR"`"/fscompat.ko @OUTPUT@'
+            + '&& mv "$MODDIR"/fscompat.ko @OUTPUT@'
     ],
     build_by_default: true
 )
