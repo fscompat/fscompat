@@ -5,11 +5,13 @@ project('fscompat-linux',
 
 dependency('libelf')
 
+bash = find_program('bash')
+
 custom_target('fscompat.ko',
     output: 'fscompat.ko',
     input: 'fscompat.c',
     command: [
-        'sh',
+        bash,
         '-c',
         'unset CC'
             + '&& pushd "`dirname "@INPUT@"`"'
