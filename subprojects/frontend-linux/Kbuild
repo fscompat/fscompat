@@ -1,1 +1,1 @@
-obj-m := fc_fat.o
+obj-m := fscompat.o
