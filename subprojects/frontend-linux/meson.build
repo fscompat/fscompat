@@ -3,6 +3,8 @@ project('fscompat-linux',
     default_options : ['c_std=gnu11']
 )
 
+dependency('libelf')
+
 custom_target('fscompat.ko',
     output: 'fscompat.ko',
     input: files('fscompat.c', 'Kbuild'),
