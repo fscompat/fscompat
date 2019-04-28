@@ -5,6 +5,11 @@ project('fscompat-linux',
 
 custom_target('fscompat.ko',
     output: 'fscompat.ko',
-    input: files('fscompat.c'),
-    command: ['sh', '-c', 'make -C /lib/modules/`uname -r`/build M=$PWD']
+    input: files('fscompat.c', 'Kbuild'),
+    command: [
+        'sh',
+        '-c',
+        'make -C /lib/modules/`uname -r`/build M="`dirname "@INPUT0@"`'
+            + '&& mv "`dirname "@INPUT0"`"/fscompat.ko @OUTPUT@'
+    ]
 )
