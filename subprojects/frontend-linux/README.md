@@ -42,7 +42,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ### GPL
 
-fscompat for the Linux kernel
+fscompat for the Linux kernel  
 Copyright (C) 2019 fscompat Developers
 
 This program is free software; you can redistribute it and/or modify
