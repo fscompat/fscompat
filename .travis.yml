@@ -16,6 +16,6 @@ addons:
       - meson
 
 script:
- - meson setup build
+ - meson build
  - cd build
  - ninja
