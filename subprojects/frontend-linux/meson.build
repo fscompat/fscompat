@@ -14,14 +14,15 @@ custom_target('fscompat.ko',
         bash,
         '-c',
         'unset CC'
-            + '&& pushd "`dirname "@INPUT@"`"'
-            + '&& MODDIR="`pwd`"'
-            + '&& popd'
-            + '&& mkdir -p @PRIVATE_DIR@'
-            + '&& cd @PRIVATE_DIR@'
+            + '&& rm -rf "@PRIVATE_DIR@"/fscompat-linux'
+            + '&& mkdir -p "@PRIVATE_DIR@"'
+            + '&& cp -R "`dirname "@INPUT@"`" '
+                + '"@PRIVATE_DIR@"/fscompat-linux'
+            + '&& pushd "@PRIVATE_DIR@"/fscompat-linux'
             + '&& make -C /lib/modules/`uname -r`/build '
-                + 'M="$MODDIR"'
-            + '&& mv "$MODDIR"/fscompat.ko @OUTPUT@'
+                + 'M="`pwd`"'
+            + '&& popd'
+            + '&& mv "@PRIVATE_DIR@"/fscompat-linux/fscompat.ko @OUTPUT@'
     ],
     build_by_default: true
 )
