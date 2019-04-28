@@ -24,7 +24,7 @@ addons:
     update: true
 
 before_install:
-  - '[[ "$TRAVIS_OS_NAME" == "linux" ]] && pip3 install meson'
+  - '[[ ! "$TRAVIS_OS_NAME" == "osx" ]] || pip3 install meson'
 
 script:
  - meson build
