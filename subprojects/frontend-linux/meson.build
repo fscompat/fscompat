@@ -7,7 +7,7 @@ dependency('libelf')
 
 custom_target('fscompat.ko',
     output: 'fscompat.ko',
-    input: files('fscompat.c', 'Kbuild'),
+    input: 'fscompat.c',
     command: [
         'sh',
         '-c',
