@@ -20,7 +20,7 @@ pushd "$PRIVATE_DIR"/fscompat-linux
 
 echo "obj-m := $OBJECTS" > Kbuild
 ls /lib/modules
-MODULE_DIR="/lib/modules/`ls -1 /lib/modules | head -n1`/build"
+MODULE_DIR="/lib/modules/`ls -1 /lib/modules | grep generic | head -n1`/build"
 if [[ -e "/lib/modules/`uname -r`/build" ]]
 then
     MODULE_DIR="/lib/modules/`uname -r`/build"
