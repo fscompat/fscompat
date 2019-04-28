@@ -5,7 +5,7 @@ This frontend is non-functional and a work in progress.
 ## License
 
 fscompat for the Linux kernel is triple licensed under the CC0 license,
-the ISC license, and the GPL version 2.0 or any later version.
+the ISC license, and the GPL version 2 or any later version.
 
 ### CC0
 
