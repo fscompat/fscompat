@@ -9,7 +9,7 @@ custom_target('fscompat.ko',
     command: [
         'sh',
         '-c',
-        'make -C /lib/modules/`uname -r`/build M="`dirname "@INPUT0@"`'
+        'make -C /lib/modules/`uname -r`/build M="`dirname "@INPUT0@"`"'
             + '&& mv "`dirname "@INPUT0"`"/fscompat.ko @OUTPUT@'
     ],
     build_by_default: true
