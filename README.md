@@ -17,6 +17,9 @@ Each subproject is licensed separately. Most are licensed under CC0 and
 many frontends are dual- or triple- licensed under the ISC license and/or
 the GPL as well.
 
+Subprojects which do not state a license are dedicated to the public
+domain under CC0.
+
 ## Building
 
 fscompat uses Meson for building. To compile every platform that is
