@@ -1,4 +1,4 @@
-# fscompat
+# fscompat [![Build Status](https://travis-ci.com/fscompat/fscompat.svg?branch=master)](https://travis-ci.com/fscompat/fscompat)
 
 fscompat aims to create public domain implementations of many filesystems
 with a shared interface, so they can all be easily ported to many
