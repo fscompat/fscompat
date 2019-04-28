@@ -1,0 +1,4 @@
+option('name', type: 'string', value: 'fscompat')
+option('version', type: 'string', value: '0.0.1')
+option('build_number', type: 'string', value: '0')
+option('domain', type: 'string', value: 'io.github.fscompat')

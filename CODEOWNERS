@@ -1,0 +1,23 @@
+###
+# fscompat maintainers
+###
+# 
+# You will be added as a maintainer to a subproject if:
+#   1. You contributed that subproject OR
+#   2. An existing maintainer of that subproject requested that the lead
+#      maintainer add you as a maintainer to that subproject. You may be
+#      able to adopt a foster subproject as well.
+
+# Lead maintainer
+CODEOWNERS                    piperswe@gmail.com
+*                             piperswe@gmail.com
+
+# Copyright maintainer
+COPYING                       piperswe@gmail.com
+COPYING.*                     piperswe@gmail.com
+
+# Frontends
+/subprojects/frontend-darwin  piperswe@gmail.com # foster
+/subprojects/frontend-freebsd piperswe@gmail.com # foster
+/subprojects/frontend-fuse    piperswe@gmail.com # foster
+/subprojects/frontend-linux   piperswe@gmail.com # foster
