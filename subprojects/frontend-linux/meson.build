@@ -17,7 +17,7 @@ custom_target('fscompat.ko',
             + '&& pushd "`dirname "@INPUT@"`"'
             + '&& MODDIR="`pwd`"'
             + '&& popd'
-            + '&& mkdir @PRIVATE_DIR@'
+            + '&& mkdir -p @PRIVATE_DIR@'
             + '&& cd @PRIVATE_DIR@'
             + '&& make -C /lib/modules/`uname -r`/build '
                 + 'M="$MODDIR"'
