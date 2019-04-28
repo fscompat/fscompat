@@ -10,9 +10,8 @@ mkdir -p "$PRIVATE_DIR"
 
 for INPUT in "$@"
 do
-    FILENAME="`basename "$INPUT"`"
-    OBJECTNAME="${$FILENAME%.*}.o"
-    OBJECTS="$OBJECTS $OBJECTNAME"
+    FILENAME="`basename "$INPUT" .c`.o"
+    OBJECTS="$OBJECTS $FILENAME"
 done
 
 SOURCE_DIR="`dirname "$1"`"
