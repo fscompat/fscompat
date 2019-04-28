@@ -1,5 +1,8 @@
 project('fscompat')
 
+subproject('interface')
+subproject('fs-fat')
+
 fuse = dependency('fuse', required: false)
 if fuse.found()
     message('Building FUSE module')
