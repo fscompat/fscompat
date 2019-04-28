@@ -19,7 +19,7 @@ cp -R "$SOURCE_DIR" "$PRIVATE_DIR"/fscompat-linux
 pushd "$PRIVATE_DIR"/fscompat-linux
 
 echo "obj-m := $OBJECTS" > Kbuild
-MODULE_DIR=/lib/modules/*/build
+MODULE_DIR=/usr/src/linux-headers-*
 if [[ -e "/lib/modules/`uname -r`/build" ]]
 then
     MODULE_DIR="/lib/modules/`uname -r`/build"
