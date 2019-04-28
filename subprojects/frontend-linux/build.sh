@@ -9,6 +9,7 @@ rm -rf "$PRIVATE_DIR"/fscompat-linux
 mkdir -p "$PRIVATE_DIR"
 
 for INPUT in "$@"
+do
     FILENAME="`basename "$INPUT"`"
     OBJECTNAME="${$FILENAME%.*}.o"
     OBJECTS="$OBJECTS $OBJECTNAME"
