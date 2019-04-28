@@ -1,8 +1,8 @@
 language: c
+dist: xenial
 os:
   - linux
   - osx
-
 compiler:
  - gcc
  - clang
