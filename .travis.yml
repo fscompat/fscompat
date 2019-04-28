@@ -17,6 +17,7 @@ addons:
       - ninja-build
       - libfuse-dev
       - libelf-dev
+      - linux-generic
   homebrew:
     packages:
       - meson
